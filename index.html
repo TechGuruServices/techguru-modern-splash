@@ -17,7 +17,7 @@
       align-items: center;
     }
 
-    .splash {
+    video.splash {
       width: 100%;
       max-height: 60vh;
       object-fit: cover;
@@ -26,25 +26,30 @@
 
     .container {
       padding: 3rem 1.5rem;
-      max-width: 600px;
+      max-width: 700px;
       text-align: center;
       animation: fadeIn 1.2s ease-in-out;
     }
 
     .logo {
-      width: 100px;
-      margin-bottom: 1.5rem;
+      width: 180px;
+      margin-bottom: 2rem;
+      filter: drop-shadow(0 0 15px #2f81f7);
+    }
+
+    h1, p, .info p, .info a {
+      text-shadow: 0 0 8px #2f81f7;
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       margin-bottom: 1rem;
       font-weight: 600;
       color: #2f81f7;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.05rem;
       line-height: 1.6;
       color: #c9d1d9;
       margin-bottom: 2rem;
@@ -54,9 +59,11 @@
       background-color: #2f81f7;
       color: #fff;
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+      padding: 0.9rem 1.8rem;
+      border-radius: 10px;
       font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 0 12px #2f81f7;
       transition: background 0.3s ease;
     }
 
@@ -65,8 +72,8 @@
     }
 
     .info {
-      margin-top: 2rem;
-      font-size: 0.9rem;
+      margin-top: 2.5rem;
+      font-size: 0.95rem;
       color: #8b949e;
     }
 
@@ -82,7 +89,10 @@
   </style>
 </head>
 <body>
-  <img src="splash-banner.gif" alt="Splash Intro" class="splash"/>
+  <video autoplay muted loop playsinline class="splash">
+    <source src="splash-banner.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
   <div class="container">
     <img src="techgurulogo.svg" alt="TechGuru Logo" class="logo"/>
@@ -97,7 +107,7 @@
       <p>📨 info@techguruofficial.us</p>
       <p>🌐 <a href="https://www.techguruofficial.us">techguruofficial.us</a></p>
       <p>☕ <a href="https://buymeacoffee.com/techguruservice">Buy Me a Coffee</a></p>
-      <p>💾 <a href="https://github.com/NinjaXcode/techguru-splash">GitHub Repository</a></p>
+      <p>💾 <a href="https://github.com/NinjaXcode/techguru-modern-splash">GitHub Repository</a></p>
       <p>📸 <a href="https://instagram.com/TechGuru_SERVICES_official">@TechGuru_SERVICES_official</a></p>
     </div>
   </div>
